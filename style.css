@@ -30,34 +30,29 @@ main {
   background-color: black;
   /* border-width: 3vh; */
   border-radius: 15%;
-  font-size: 20vw;
+  font-size: 24vw;
   margin: 5px;
   display: inline;
-  border-width: 2px;
+  border-width: 0.2rem;
   border-style: solid;
   border-color: white;
-  padding: 2px;
+  padding: -2rem;
 }
 
 .date {
   color: white;
-  border-radius: 15%;
-  border-width: 2px;
+  border-radius: 5rem;
+  border-width: 0.2rem;
   border-style: solid;
   border-color: white;
-  font-size: 5vw;
+  font-size: 1.7vw;
   margin: 10px;
   margin-top: 20px;
+  padding: 5px 15px;
   float: right;
 }
 
 .footer {
-  /* position: absolute;
-  bottom: 0; */
-  /* margin-bottom: 20px;
-  text-align: center;
-  width: 80vw;
-  display: inline-block; */
   margin-top: 10vw;
   display: flex;
   justify-content: space-between;
@@ -65,22 +60,30 @@ main {
 }
 
 .btn {
-  background-color: aquamarine;
-  border: none;
-  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5rem;
   padding: 5px 15px;
   text-align: center;
   display: inline-block;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
-.install {
-  float: left;
-}
-
-.switch {
-  float: right;
+.btn:active {
+  transform: translate(0%, 10%);
 }
 
 .hidden {
   display: none;
+}
+
+.night {
+  color: darkred;
+  border-color: darkred;
+}
+
+.btn-night {
+  color: grey;
+  background-color: rgb(139, 0, 0, 0.4);
 }
