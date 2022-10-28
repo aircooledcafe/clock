@@ -5,7 +5,7 @@
 }
 
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
@@ -23,6 +23,7 @@ main {
 
 .clock {
   text-align: center;
+  width: 100%;
 }
 
 .digits {
@@ -30,7 +31,7 @@ main {
   background-color: black;
   /* border-width: 3vh; */
   border-radius: 15%;
-  font-size: 24vw;
+  font-size: 25vw;
   margin: 5px;
   display: inline;
   border-width: 0.2rem;
