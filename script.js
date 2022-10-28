@@ -40,7 +40,7 @@ const setTime = function () {
   dateEl.textContent = date;
 };
 
-// night mode button, toggle red colours for night time
+// night mode button, toggle red colors for night time
 
 btnNightModeEl.addEventListener("click", function () {
   hoursEl.classList.toggle("night");
@@ -48,6 +48,7 @@ btnNightModeEl.addEventListener("click", function () {
   secondsEl.classList.toggle("night");
   dateEl.classList.toggle("night");
   btnNightModeEl.classList.toggle("btn-night");
+  if (hoursEl.classList.contains("night") ? btnNightModeEl.textContent = "Day Mode" : btnNightModeEl.textContent = "Night Mode");
 });
 
 // progressive web app, service worker code
